@@ -1,5 +1,7 @@
 # Which codebase to use
 
+**Primary modding repo:** [github.com/boyaloxer/benilla](https://github.com/boyaloxer/benilla) — upstream benilla only (no survivors). See `docs/MODDING-START.md` there.
+
 ## Recommendation: **benilla** (1.12.1) for a normal client
 
 The strangeness at startup is **Azeroth Survivors mode** (`warcraft-survivors` → `run_survivors()`): custom pick screen, auto-combat, no login. That is not what a stock WoW session looks like.
