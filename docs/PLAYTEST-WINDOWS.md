@@ -1,6 +1,15 @@
 # Playtesting on Windows (fork workflow)
 
-This repo is a community reimplementation stack (benilla + survivors mode). The commercial **Azeroth Survivors** install under `C:\Games\AzerothSurvivors\` uses different patch MPQs only — you still need a full **WoW 1.12.1 (5875)** `Data` folder with at least `terrain.MPQ` and `patch.MPQ`.
+**Two binaries, same engine:**
+
+| Command | What you get |
+|---------|----------------|
+| `.\scripts\dev-vanilla.ps1` | **Normal 1.12.1 client** (login, Realmlist, stock UI) — use this as your edit base. |
+| `.\scripts\dev-native.ps1` | **Azeroth Survivors** roguelike (custom menu, auto combat, offline BG) — reference only unless you are hacking survivors. |
+
+See [VANILLA-BASE.md](./VANILLA-BASE.md) for benilla vs Wrath forks and upstream links.
+
+The commercial **Azeroth Survivors** install under `C:\Games\AzerothSurvivors\` uses different patch MPQs only — you still need a full **WoW 1.12.1 (5875)** `Data` folder with at least `terrain.MPQ` and `patch.MPQ`.
 
 ## One-time setup
 
