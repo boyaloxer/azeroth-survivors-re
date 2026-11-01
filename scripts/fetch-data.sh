@@ -38,6 +38,12 @@ fi
 
 echo "extracting MPQs into ${DATA}…"
 mkdir -p "$DATA"
+if ! command -v unzip >/dev/null 2>&1; then
+    echo "error: unzip not found in this shell."
+    echo "  Windows: run PowerShell at repo root: .\\scripts\\extract-wow-data.ps1"
+    echo "  Or install unzip (e.g. MSYS2: pacman -S unzip) and re-run this script."
+    exit 127
+fi
 unzip -o "$ZIP" 'Data/*.MPQ' -d "$DATA_DIR"
 
 # The MPQs are what the game reads; drop the zip to reclaim ~5.5 GB.
